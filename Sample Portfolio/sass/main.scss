@@ -37,6 +37,8 @@ div > div:nth-child(odd) {
 
 .header {
   grid-column: 1/13;
+  display: flex;
+  justify-content: center;
 
   img {
     width: 50px;
@@ -81,6 +83,7 @@ div > div:nth-child(odd) {
 
 .section-title {
   text-align: center;
+  font-size: 13px;
   font-weight: bolder;
   text-decoration: underline;
   text-transform: uppercase;
@@ -88,18 +91,20 @@ div > div:nth-child(odd) {
   margin-bottom: 10px;
   span {
     color: crimson;
+    font-family: "Trebuchet MS";
+  }
+}
+
+.service-top {
+  text-align: center;
+  p {
+    font: 1em sans-serif;
   }
 }
 .about {
   grid-column: 1/13;
   margin: 10px 10px;
 
-  .service-top {
-    text-align: center;
-    p {
-      font: 1em sans-serif;
-    }
-  }
   .service-bot {
     display: flex;
     justify-content: center;
@@ -117,4 +122,19 @@ div > div:nth-child(odd) {
 .skill {
   grid-column: 1/13;
   margin: 10px 10px;
+}
+#file {
+  width: 100%;
+  height: 14px;
+}
+.skill-sets {
+  padding: 10px;
+  text-align: center;
+  h2 {
+    display: inline-block;
+  }
+}
+.projects {
+  grid-column: 1/-1;
+  padding: 10px;
 }
