@@ -53,6 +53,9 @@ div > div:nth-child(odd) {
   background-image: url("/img/cover.jpg");
   background-size: cover;
 
+  min-height: 90vh;
+  width: 100%;
+
   color: white;
   font-size: 2rem;
   letter-spacing: 0.2rem;
@@ -98,7 +101,7 @@ div > div:nth-child(odd) {
 .service-top {
   text-align: center;
   p {
-    font: 1em sans-serif;
+    font: 1.2em sans-serif;
   }
 }
 .about {
@@ -137,4 +140,42 @@ div > div:nth-child(odd) {
 .projects {
   grid-column: 1/-1;
   padding: 10px;
+
+  .service-top {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+    margin: 10px 5%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    background: url("/img/web.jpg");
+    background-size: cover;
+
+    color: aliceblue;
+    z-index: 1;
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1rem;
+    }
+    ::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgb(47, 48, 47);
+      opacity: 0.2;
+      z-index: -1;
+    }
+  }
 }
