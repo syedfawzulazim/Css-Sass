@@ -191,3 +191,51 @@ li {
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .main {
+    font-size: 4rem;
+    a {
+      font-size: 2rem;
+    }
+  }
+  .section-title {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+  }
+  .service-top {
+    p {
+      font-size: 2rem;
+    }
+  }
+  .about {
+    .service-bot {
+      img {
+        width: 180px;
+        height: 289px;
+      }
+    }
+  }
+}
+.skill {
+  grid-column: 1/6;
+}
+#file {
+  width: 100%;
+  height: 39px;
+}
+.skill-sets {
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+
+.projects {
+  grid-column: 6/-1;
+  display: flex;
+  flex-direction: column;
+  .section-title {
+  }
+  .service-top {
+  }
+}

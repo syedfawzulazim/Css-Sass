@@ -238,4 +238,50 @@ li {
 .contact li:nth-child(3) {
   margin-bottom: 20px;
 }
+
+@media screen and (min-width: 768px) {
+  .main {
+    font-size: 4rem;
+  }
+  .main a {
+    font-size: 2rem;
+  }
+  .section-title {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+  }
+  .service-top p {
+    font-size: 2rem;
+  }
+  .about .service-bot img {
+    width: 180px;
+    height: 289px;
+  }
+}
+
+.skill {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+}
+
+#file {
+  width: 100%;
+  height: 39px;
+}
+
+.skill-sets h2 {
+  font-size: 2.2rem;
+}
+
+.projects {
+  grid-column: 6/-1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 /*# sourceMappingURL=main.css.map */
