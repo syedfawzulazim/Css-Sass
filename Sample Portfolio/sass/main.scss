@@ -6,9 +6,6 @@
   box-sizing: inherit;
 }
 
-.footer {
-  grid-column: 1 / -1;
-}
 html {
   box-sizing: border-box;
   font-size: 10px;
@@ -178,4 +175,20 @@ div > div:nth-child(odd) {
       z-index: -1;
     }
   }
+}
+.contact {
+  grid-column: 1/-1;
+
+  text-align: center;
+  background: rgb(193, 226, 226);
+
+  li {
+    font-size: 1.4rem;
+    font-family: sans-serif;
+  }
+}
+
+.footer {
+  grid-column: 1 / -1;
+  grid-row: span 2;
 }

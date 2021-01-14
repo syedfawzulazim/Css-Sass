@@ -7,10 +7,6 @@
           box-sizing: inherit;
 }
 
-.footer {
-  grid-column: 1 / -1;
-}
-
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -232,5 +228,21 @@ div > div:nth-child(odd) {
   background-color: #2f302f;
   opacity: 0.2;
   z-index: -1;
+}
+
+.contact {
+  grid-column: 1/-1;
+  text-align: center;
+  background: #c1e2e2;
+}
+
+.contact li {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
+
+.footer {
+  grid-column: 1 / -1;
+  grid-row: span 2;
 }
 /*# sourceMappingURL=main.css.map */
