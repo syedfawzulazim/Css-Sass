@@ -21,14 +21,6 @@ li {
   list-style: none;
 }
 
-div > div:nth-child(even) {
-  border: 1px dotted red;
-}
-
-div > div:nth-child(odd) {
-  border: 1px dotted black;
-}
-
 .container {
   display: -ms-grid;
   display: grid;
@@ -234,15 +226,16 @@ div > div:nth-child(odd) {
   grid-column: 1/-1;
   text-align: center;
   background: #c1e2e2;
+  margin-bottom: 1px;
 }
 
 .contact li {
   font-size: 1.4rem;
   font-family: sans-serif;
+  padding: 4px;
 }
 
-.footer {
-  grid-column: 1 / -1;
-  grid-row: span 2;
+.contact li:nth-child(3) {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */
