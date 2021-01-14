@@ -257,31 +257,30 @@ li {
     width: 180px;
     height: 289px;
   }
-}
-
-.skill {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-column: 1/6;
-}
-
-#file {
-  width: 100%;
-  height: 39px;
-}
-
-.skill-sets h2 {
-  font-size: 2.2rem;
-}
-
-.projects {
-  grid-column: 6/-1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  .skill {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1/6;
+  }
+  #file {
+    width: 100%;
+    height: 39px;
+  }
+  .skill-sets h2 {
+    font-size: 2.2rem;
+  }
+  .projects {
+    grid-column: 6/-1;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
+  .projects .section-title {
+    grid-column: 1/-1;
+  }
+  .projects .service-top {
+    grid-column: span 2;
+  }
 }
 /*# sourceMappingURL=main.css.map */
