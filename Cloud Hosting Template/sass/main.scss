@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 @import "variables";
+@import "utilities";
 *,
 *::before,
 *::after {
@@ -75,41 +76,74 @@ img {
     gap: 30px;
     overflow: visible;
   }
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    transform: skewY(-3deg);
+  }
 }
 .showcase-form {
   position: relative;
   top: 60px;
   height: 350px;
+  width: 400px;
+  padding: 40px;
+  justify-content: flex-end;
+  z-index: 100;
+  .form-control {
+    margin: 30px 0;
+  }
+  input:not([type="submit"]) {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 1.6rem;
+  }
+  input:focus {
+    outline: none;
+  }
 }
-
-//Utilities
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0 40px;
+//Stats
+.stats {
+  padding-top: 100px;
+  h3 {
+    font-size: 1.3rem;
+  }
+  .grid {
+    h3 {
+      font-size: 3.5rem;
+    }
+    p {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
 }
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.stats-heading {
+  max-width: 500px;
+  margin: auto;
 }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+//CLI
+.cli {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .grid :nth-child(1) {
+    grid-column: 1 / span 2;
+    grid-row: 1/-1;
+  }
 }
-
-.card {
-  background-color: #fff;
-  color: #333;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba($color: black, $alpha: 0.2);
-  padding: 20px;
-  margin: 10px;
+//Cloud
+.cloud {
+  .grid {
+    grid-template-columns: 4fr, 3fr;
+  }
 }
