@@ -147,3 +147,25 @@ img {
     grid-template-columns: 4fr, 3fr;
   }
 }
+//languages
+.language {
+  .flex {
+    flex-wrap: wrap;
+  }
+  .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease;
+    h4 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    &:hover {
+      transform: translateY(-15px) scale(0.9);
+    }
+  }
+}
+//footer
+.footer .social a {
+  margin: 0 10px;
+}

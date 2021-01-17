@@ -90,6 +90,14 @@
   text-align: center;
 }
 
+.lead {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,8 +135,8 @@
   background-color: #fff;
   color: #333;
   border-radius: 10px;
-  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin: 10px;
 }
@@ -156,6 +164,44 @@
 .bg-primary,
 .btn-primary {
   background-color: #047aed;
+  color: #fff;
+}
+
+.bg-primary a,
+.btn-primary a {
+  color: #fff;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: #1c3fa8;
+  color: #fff;
+}
+
+.bg-secondary a,
+.btn-secondary a {
+  color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: #002240;
+  color: #fff;
+}
+
+.bg-dark a,
+.btn-dark a {
+  color: #fff;
+}
+
+.bg-light,
+.btn-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.bg-light a,
+.btn-light a {
   color: #fff;
 }
 
@@ -333,5 +379,33 @@ img {
 .cloud .grid {
   -ms-grid-columns: 4fr, 3fr;
       grid-template-columns: 4fr, 3fr;
+}
+
+.language .flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.language .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.language .card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.language .card:hover {
+  -webkit-transform: translateY(-15px) scale(0.9);
+          transform: translateY(-15px) scale(0.9);
+}
+
+.footer .social a {
+  margin: 0 10px;
 }
 /*# sourceMappingURL=main.css.map */
