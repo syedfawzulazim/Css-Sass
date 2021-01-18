@@ -79,13 +79,6 @@
   margin: 4rem;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0 40px;
-}
-
 .text-center {
   text-align: center;
 }
@@ -96,6 +89,13 @@
 
 .lg {
   font-size: 3rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
 }
 
 .flex {
@@ -270,8 +270,9 @@ img {
 
 .navbar a {
   color: white;
-  padding: 10px;
+  padding: 1rem;
   margin: 0 5px;
+  font-size: 1.4rem;
 }
 
 .navbar a:hover {
@@ -407,5 +408,59 @@ img {
 
 .footer .social a {
   margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .showcase {
+    height: auto;
+  }
+  .showcase-text {
+    text-align: center;
+    margin: 40px;
+  }
+  .showcase-form {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: center;
+  }
+  .cli .grid :nth-child(1) {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+    overflow: hidden;
+  }
+  .navbar .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .showcase-form {
+    width: 300px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

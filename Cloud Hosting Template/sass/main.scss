@@ -51,8 +51,9 @@ img {
   }
   a {
     color: white;
-    padding: 10px;
+    padding: 1rem;
     margin: 0 5px;
+    font-size: 1.4rem;
     &:hover {
       border-bottom: 2px solid #fff;
     }
@@ -168,4 +169,53 @@ img {
 //footer
 .footer .social a {
   margin: 0 10px;
+}
+
+// Tables and under
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .showcase {
+    height: auto;
+  }
+  .showcase-text {
+    text-align: center;
+    margin: 40px;
+  }
+  .showcase-form {
+    justify-self: center;
+    text-align: center;
+  }
+  .cli {
+    .grid :nth-child(1) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+  .footer {
+    text-align: center;
+  }
+}
+// Mobile
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+    overflow: hidden;
+    .flex {
+      flex-direction: column;
+    }
+    ul {
+      padding: 10px;
+      background-color: rgba($color: #000, $alpha: 0.1);
+    }
+  }
+  .showcase-form {
+    width: 300px;
+  }
 }
