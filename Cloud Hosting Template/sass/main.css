@@ -205,6 +205,12 @@
   color: #fff;
 }
 
+span {
+  color: yellow;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
 *,
 *::before,
 *::after {
@@ -442,6 +448,26 @@ img {
   .footer {
     text-align: center;
   }
+}
+
+.features-head img {
+  width: 200px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.features-sub-head img {
+  width: 300px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.feature-main i {
+  margin: 0 20px;
+}
+
+.feature-main .grid-3 {
+  padding: 30px;
 }
 
 @media (max-width: 500px) {

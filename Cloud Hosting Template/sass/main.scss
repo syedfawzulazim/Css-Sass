@@ -202,6 +202,28 @@ img {
     text-align: center;
   }
 }
+//features
+.features-head {
+  img {
+    width: 200px;
+    justify-self: end;
+  }
+}
+.features-sub-head {
+  img {
+    width: 300px;
+    justify-self: end;
+  }
+}
+.feature-main {
+  i {
+    margin: 0 20px;
+  }
+  .grid-3 {
+    padding: 30px;
+  }
+}
+
 // Mobile
 @media (max-width: 500px) {
   .navbar {
