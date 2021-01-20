@@ -171,13 +171,77 @@ img {
   margin: 0 10px;
 }
 
+//features
+.features-head,
+.docs-head {
+  img {
+    width: 200px;
+    justify-self: end;
+  }
+}
+.features-sub-head {
+  img {
+    width: 300px;
+    justify-self: end;
+  }
+}
+.feature-main {
+  i {
+    margin: 0 20px;
+  }
+  .grid-3 {
+    padding: 30px;
+  }
+  .container {
+    :nth-child(1) {
+      grid-column: 1/-1;
+    }
+    :nth-child(2) {
+      grid-column: span 2;
+    }
+  }
+}
+//Documentation
+.docs-main {
+  h3 {
+    margin: 20px 0;
+  }
+  .grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+  }
+  nav {
+    li {
+      font-size: 17px;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+      border-bottom: 1px solid #ccc;
+
+      a {
+        color: #333;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+code,
+pre {
+  background: #333;
+  color: #b4becb;
+  padding: 10px;
+}
+
 // Tables and under
 @media (max-width: 768px) {
   .grid,
   .showcase .grid,
   .stats .grid,
   .cli .grid,
-  .cloud .grid {
+  .cloud .grid,
+  .feature-main .grid,
+  .docs-main .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -201,26 +265,19 @@ img {
   .footer {
     text-align: center;
   }
-}
-//features
-.features-head {
-  img {
-    width: 200px;
-    justify-self: end;
+  .features-head,
+  .features-sub-head,
+  .docs-head {
+    text-align: center;
+    img {
+      justify-self: center;
+    }
   }
-}
-.features-sub-head {
-  img {
-    width: 300px;
-    justify-self: end;
-  }
-}
-.feature-main {
-  i {
-    margin: 0 20px;
-  }
-  .grid-3 {
-    padding: 30px;
+  .feature-main .grid {
+    :nth-child(1),
+    :nth-child(2) {
+      grid-column: 1/-1;
+    }
   }
 }
 

@@ -161,3 +161,18 @@ span {
   font-weight: bolder;
   font-size: 2rem;
 }
+.alert {
+  background-color: $light-color;
+  padding: 10px 20px;
+  margin: 15px 0;
+  font-weight: bold;
+  i {
+    margin-right: 10px;
+  }
+}
+.alert-success {
+  background-color: aquamarine;
+}
+.text-primary {
+  color: salmon;
+}
