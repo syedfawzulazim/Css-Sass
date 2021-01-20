@@ -97,6 +97,7 @@ img {
   padding: 40px;
   justify-content: flex-end;
   z-index: 100;
+  animation: slideInFromRight 1s ease-in;
   .form-control {
     margin: 30px 0;
   }
@@ -110,6 +111,9 @@ img {
   input:focus {
     outline: none;
   }
+}
+.showcase-text {
+  animation: slideInFromLeft 1s ease-in;
 }
 //Stats
 .stats {
@@ -232,6 +236,43 @@ pre {
   color: #b4becb;
   padding: 10px;
 }
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+//Animations
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromBot {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 // Tables and under
 @media (max-width: 768px) {
@@ -251,10 +292,12 @@ pre {
   .showcase-text {
     text-align: center;
     margin: 40px;
+    animation: slideInFromTop 1s ease-in;
   }
   .showcase-form {
     justify-self: center;
     text-align: center;
+    animation: slideInFromBot 1s ease-in;
   }
   .cli {
     .grid :nth-child(1) {

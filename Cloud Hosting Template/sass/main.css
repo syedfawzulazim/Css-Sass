@@ -348,6 +348,8 @@ img {
       -ms-flex-pack: end;
           justify-content: flex-end;
   z-index: 100;
+  -webkit-animation: slideInFromRight 1s ease-in;
+          animation: slideInFromRight 1s ease-in;
 }
 
 .showcase-form .form-control {
@@ -364,6 +366,11 @@ img {
 
 .showcase-form input:focus {
   outline: none;
+}
+
+.showcase-text {
+  -webkit-animation: slideInFromLeft 1s ease-in;
+          animation: slideInFromLeft 1s ease-in;
 }
 
 .stats {
@@ -498,6 +505,99 @@ pre {
   padding: 10px;
 }
 
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInFromTop {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInFromBot {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBot {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 @media (max-width: 768px) {
   .grid,
   .showcase .grid,
@@ -517,11 +617,15 @@ pre {
   .showcase-text {
     text-align: center;
     margin: 40px;
+    -webkit-animation: slideInFromTop 1s ease-in;
+            animation: slideInFromTop 1s ease-in;
   }
   .showcase-form {
     -ms-grid-column-align: center;
         justify-self: center;
     text-align: center;
+    -webkit-animation: slideInFromBot 1s ease-in;
+            animation: slideInFromBot 1s ease-in;
   }
   .cli .grid :nth-child(1) {
     -ms-grid-column: 1;
