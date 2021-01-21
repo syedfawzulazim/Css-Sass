@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+/* Margins & Padding */
+.m-1 {
+  margin: 10px;
+}
+
+.m-2 {
+  margin: 15px;
+}
+
+.m-3 {
+  margin: 20px;
+}
+
+.my-1 {
+  margin: 10px 0;
+}
+
+.my-2 {
+  margin: 15px 0;
+}
+
+.my-3 {
+  margin: 20px 0;
+}
+
+.mx-1 {
+  margin: 0 10px;
+}
+
+.mx-2 {
+  margin: 0 15px;
+}
+
+.mx-3 {
+  margin: 0 20px;
+}
+
+.p-1 {
+  padding: 10px;
+}
+
+.p-2 {
+  padding: 15px;
+}
+
+.p-3 {
+  padding: 20px;
+}
+
+.py-1 {
+  padding: 10px 0;
+}
+
+.py-2 {
+  padding: 15px 0;
+}
+
+.py-3 {
+  padding: 20px 0;
+}
+
+.px-1 {
+  padding: 0 10px;
+}
+
+.px-2 {
+  padding: 0 15px;
+}
+
+.px-3 {
+  padding: 0 20px;
+}
+
+.container {
+  background: #f9fbfc;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.btn {
+  background-color: #7260d6;
+  color: white;
+  border: 1px solid #7260d6;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid #7260d6;
+}
+
+.bg-primary,
+.btn-primary {
+  background-color: #7260d6;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  line-height: 1.6;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.header {
+  height: 70px;
+}
+
+.header .flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .nav__bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .nav__bar a {
+  margin: 0 5px;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=main.css.map */

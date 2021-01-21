@@ -1,0 +1,87 @@
+@import "variables";
+/* Margins & Padding */
+.m-1 {
+  margin: 10px;
+}
+.m-2 {
+  margin: 15px;
+}
+.m-3 {
+  margin: 20px;
+}
+.my-1 {
+  margin: 10px 0;
+}
+.my-2 {
+  margin: 15px 0;
+}
+.my-3 {
+  margin: 20px 0;
+}
+.mx-1 {
+  margin: 0 10px;
+}
+.mx-2 {
+  margin: 0 15px;
+}
+.mx-3 {
+  margin: 0 20px;
+}
+
+.p-1 {
+  padding: 10px;
+}
+.p-2 {
+  padding: 15px;
+}
+.p-3 {
+  padding: 20px;
+}
+.py-1 {
+  padding: 10px 0;
+}
+.py-2 {
+  padding: 15px 0;
+}
+.py-3 {
+  padding: 20px 0;
+}
+.px-1 {
+  padding: 0 10px;
+}
+.px-2 {
+  padding: 0 15px;
+}
+.px-3 {
+  padding: 0 20px;
+}
+
+.container {
+  background: $clr-light-100;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.btn {
+  background-color: $clr-primary;
+  color: white;
+  border: 1px solid $clr-primary;
+  border-radius: 20px;
+  &:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid $clr-primary;
+  }
+}
+.bg-primary,
+.btn-primary {
+  background-color: $clr-primary;
+}
