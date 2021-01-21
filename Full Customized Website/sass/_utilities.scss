@@ -61,10 +61,23 @@
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 40px;
+  overflow: auto;
+}
+.container--full {
+  max-width: 100vw;
+  height: 70vh;
 }
 
 .flex {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -75,8 +88,9 @@
   color: white;
   border: 1px solid $clr-primary;
   border-radius: 20px;
+  transition: 0.5s;
   &:hover {
-    color: black;
+    color: green;
     background-color: white;
     border: 1px solid $clr-primary;
   }
@@ -84,4 +98,24 @@
 .bg-primary,
 .btn-primary {
   background-color: $clr-primary;
+}
+
+.br {
+  border: 2px solid salmon;
+}
+
+.fs-1 {
+  font-size: 1rem;
+}
+.fs-2 {
+  font-size: 1.5rem;
+}
+.fs-3 {
+  font-size: 2rem;
+}
+.fs-4 {
+  font-size: 2.5rem;
+}
+.fs-5 {
+  font-size: 3rem;
 }
