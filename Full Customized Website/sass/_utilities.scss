@@ -56,6 +56,31 @@
   padding: 0 20px;
 }
 
+.fs-1 {
+  font-size: 1rem;
+}
+.fs-2 {
+  font-size: 1.5rem;
+}
+.fs-3 {
+  font-size: 2rem;
+}
+.fs-4 {
+  font-size: 2.5rem;
+}
+.fs-5 {
+  font-size: 3rem;
+}
+
+.bg-primary,
+.btn-primary {
+  background-color: $clr-primary;
+}
+
+.br {
+  border: 2px solid salmon;
+}
+
 .container {
   background: $clr-light-100;
   max-width: 1160px;
@@ -95,27 +120,12 @@
     border: 1px solid $clr-primary;
   }
 }
-.bg-primary,
-.btn-primary {
-  background-color: $clr-primary;
-}
 
-.br {
-  border: 2px solid salmon;
-}
-
-.fs-1 {
-  font-size: 1rem;
-}
-.fs-2 {
-  font-size: 1.5rem;
-}
-.fs-3 {
-  font-size: 2rem;
-}
-.fs-4 {
-  font-size: 2.5rem;
-}
-.fs-5 {
-  font-size: 3rem;
+.card {
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 4px 3px 10px rgba($color: black, $alpha: 0.2);
+  padding: 20px 20px 10px;
+  margin: 10px 0 10px;
 }
