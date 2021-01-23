@@ -111,13 +111,14 @@
 .btn {
   background-color: $clr-primary;
   color: white;
-  border: 1px solid $clr-primary;
+  border: 2px solid $clr-primary;
   border-radius: 20px;
   transition: 0.5s;
+  padding: 10px;
   &:hover {
     color: green;
     background-color: white;
-    border: 1px solid $clr-primary;
+    border: 2px solid $clr-primary;
   }
 }
 

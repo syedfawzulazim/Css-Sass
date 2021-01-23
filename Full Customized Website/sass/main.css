@@ -145,16 +145,17 @@
 .btn {
   background-color: #7260d6;
   color: white;
-  border: 1px solid #7260d6;
+  border: 2px solid #7260d6;
   border-radius: 20px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  padding: 10px;
 }
 
 .btn:hover {
   color: green;
   background-color: white;
-  border: 1px solid #7260d6;
+  border: 2px solid #7260d6;
 }
 
 .card {
@@ -240,17 +241,17 @@ hr {
   display: flex;
 }
 
-.header .nav__bar a {
-  padding: 0px 20px;
+.header .nav__bar li .nav_links {
+  margin: 0 20px;
   font-size: 1.2rem;
 }
 
-.header .nav__bar a:hover {
+.header .nav__bar li .nav_links:hover {
   border-bottom: 2px solid black;
 }
 
-.header .nav__bar a:last-child {
-  padding: 10px 20px;
+.header .nav__bar li .btn {
+  padding: 10px 18px;
 }
 
 .hero .container {
@@ -349,6 +350,22 @@ hr {
 
 .app-features__right img {
   margin-left: 10px;
+  border-radius: 50%;
+  padding: 10px;
+  width: 20%;
+  height: auto;
+}
+
+.app-features__right .blue img {
+  background-color: #f4f4ff;
+}
+
+.app-features__right .red img {
+  background-color: #ffecef;
+}
+
+.app-features__right .green img {
+  background-color: #e4ffee;
 }
 
 .app-features__right h1,
