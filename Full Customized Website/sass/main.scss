@@ -38,6 +38,7 @@ hr {
   opacity: 0.6;
 }
 
+/* Header + Navbar */
 .header {
   height: 70px;
 
@@ -63,6 +64,7 @@ hr {
   }
 }
 
+/* Hero Section */
 .hero {
   .container {
     max-width: 100vw;
@@ -112,14 +114,20 @@ hr {
   }
 }
 
+/* Company */
 .company {
   text-align: center;
-  margin-top: 60px;
+  margin: 60px;
+  padding: 20px;
   img {
     margin: 0 10px;
   }
+  .flex {
+    padding: 20px;
+  }
 }
 
+/* App-Feature */
 .app-features {
   .grid {
     grid-template-columns: 1fr 1fr;
@@ -148,21 +156,6 @@ hr {
     width: 20%;
     height: auto;
   }
-  .blue {
-    img {
-      background-color: #f4f4ff;
-    }
-  }
-  .red {
-    img {
-      background-color: #ffecef;
-    }
-  }
-  .green {
-    img {
-      background-color: #e4ffee;
-    }
-  }
 
   h1,
   p,
@@ -179,5 +172,58 @@ hr {
         align-self: start;
       }
     }
+  }
+}
+
+.blue {
+  img {
+    background-color: #f4f4ff;
+  }
+}
+.red {
+  img {
+    background-color: #ffecef;
+  }
+}
+.green {
+  img {
+    background-color: #e4ffee;
+  }
+}
+/* Smart Jackports */
+.jackport {
+  margin-top: 100px;
+  .container {
+    width: 70%;
+    height: 50vh;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .top {
+    grid-column: 1/-1;
+    .flex {
+    }
+  }
+  .bot {
+    grid-column: 1/-1;
+    .card {
+      margin: 0 20px;
+    }
+    img {
+      padding: 10px;
+      width: 30%;
+      border-radius: 50%;
+    }
+  }
+  h1 {
+    color: #242f51;
+  }
+  hr {
+    opacity: 1;
+    font-weight: bolder;
+    transform-origin: left;
   }
 }

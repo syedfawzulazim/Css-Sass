@@ -72,6 +72,16 @@
   font-size: 3rem;
 }
 
+.clr-p {
+  color: blue;
+}
+.clr-r {
+  color: red;
+}
+.clr-g {
+  color: green;
+}
+
 .bg-primary,
 .btn-primary {
   background-color: $clr-primary;
@@ -129,14 +139,4 @@
   box-shadow: 4px 3px 10px rgba($color: black, $alpha: 0.2);
   padding: 20px 20px 10px;
   margin: 10px 0 10px;
-}
-
-.clr-p {
-  color: blue;
-}
-.clr-r {
-  color: red;
-}
-.clr-g {
-  color: green;
 }
