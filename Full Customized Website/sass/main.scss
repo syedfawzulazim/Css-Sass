@@ -151,10 +151,8 @@ hr {
 .app-features__right {
   img {
     margin-left: 10px;
-    border-radius: 50%;
     padding: 10px;
     width: 20%;
-    height: auto;
   }
 
   h1,
@@ -178,16 +176,19 @@ hr {
 .blue {
   img {
     background-color: #f4f4ff;
+    border-radius: 50%;
   }
 }
 .red {
   img {
     background-color: #ffecef;
+    border-radius: 50%;
   }
 }
 .green {
   img {
     background-color: #e4ffee;
+    border-radius: 50%;
   }
 }
 
@@ -216,7 +217,7 @@ hr {
     img {
       padding: 10px;
       width: 30%;
-      border-radius: 50%;
+      height: 100%;
     }
   }
   h1 {
@@ -263,6 +264,39 @@ hr {
     }
     .flex {
       flex-wrap: wrap;
+    }
+    .img-1 {
+      padding: 10px;
+    }
+    img {
+      padding: 10px;
+    }
+  }
+}
+
+/* Ultimate Section */
+.ultimate {
+  margin: 50px 0 50px;
+
+  .left {
+    .top {
+      margin: 30px 40px;
+    }
+    .card {
+      width: 220px;
+      margin-left: 25px;
+      align-items: start;
+    }
+    .bot {
+      flex-wrap: wrap;
+      img {
+        padding: 10px;
+      }
+    }
+  }
+  .right {
+    img {
+      width: 100%;
     }
   }
 }

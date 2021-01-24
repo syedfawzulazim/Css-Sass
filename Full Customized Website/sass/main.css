@@ -115,7 +115,7 @@
 
 .container {
   background: #f9fbfc;
-  max-width: 1160px;
+  max-width: 85%;
   margin: 0 auto;
   padding: 0 40px;
   overflow: auto;
@@ -359,10 +359,8 @@ hr {
 
 .app-features__right img {
   margin-left: 10px;
-  border-radius: 50%;
   padding: 10px;
   width: 20%;
-  height: auto;
 }
 
 .app-features__right h1,
@@ -396,14 +394,17 @@ hr {
 
 .blue img {
   background-color: #f4f4ff;
+  border-radius: 50%;
 }
 
 .red img {
   background-color: #ffecef;
+  border-radius: 50%;
 }
 
 .green img {
   background-color: #e4ffee;
+  border-radius: 50%;
 }
 
 /* Smart Jackports */
@@ -436,7 +437,7 @@ hr {
 .jackport .bot img {
   padding: 10px;
   width: 30%;
-  border-radius: 50%;
+  height: 100%;
 }
 
 .jackport h1 {
@@ -479,5 +480,43 @@ hr {
 .app .app-pic .flex {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.app .app-pic .img-1 {
+  padding: 10px;
+}
+
+.app .app-pic img {
+  padding: 10px;
+}
+
+/* Ultimate Section */
+.ultimate {
+  margin: 50px 0 50px;
+}
+
+.ultimate .left .top {
+  margin: 30px 40px;
+}
+
+.ultimate .left .card {
+  width: 220px;
+  margin-left: 25px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.ultimate .left .bot {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ultimate .left .bot img {
+  padding: 10px;
+}
+
+.ultimate .right img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
