@@ -197,7 +197,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: black;
   line-height: 1.6;
-  background-color: #f9fbfc;
+  background-color: #e5e6e5;
 }
 
 li {
@@ -413,7 +413,7 @@ hr {
 
 .jackport .container {
   width: 70%;
-  height: 50vh;
+  padding: 40px;
 }
 
 .jackport .grid {
@@ -448,5 +448,15 @@ hr {
   font-weight: bolder;
   -webkit-transform-origin: left;
           transform-origin: left;
+}
+
+/* Design Section */
+.design .image img {
+  padding: 70px;
+  width: 100%;
+}
+
+.design .text .btn {
+  padding: 10px 30px;
 }
 /*# sourceMappingURL=main.css.map */

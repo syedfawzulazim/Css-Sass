@@ -15,7 +15,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: black;
   line-height: 1.6;
-  background-color: $clr-light-100;
+  background-color: $clr-light-400;
 }
 li {
   list-style-type: none;
@@ -190,12 +190,15 @@ hr {
     background-color: #e4ffee;
   }
 }
+
 /* Smart Jackports */
+
 .jackport {
   margin-top: 100px;
+
   .container {
     width: 70%;
-    height: 50vh;
+    padding: 40px;
   }
 
   .grid {
@@ -204,8 +207,6 @@ hr {
 
   .top {
     grid-column: 1/-1;
-    .flex {
-    }
   }
   .bot {
     grid-column: 1/-1;
@@ -225,5 +226,21 @@ hr {
     opacity: 1;
     font-weight: bolder;
     transform-origin: left;
+  }
+}
+
+/* Design Section */
+
+.design {
+  .image {
+    img {
+      padding: 70px;
+      width: 100%;
+    }
+  }
+  .text {
+    .btn {
+      padding: 10px 30px;
+    }
   }
 }
