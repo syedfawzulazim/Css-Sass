@@ -459,4 +459,25 @@ hr {
 .design .text .btn {
   padding: 10px 30px;
 }
+
+/* App Section */
+.app .app-text {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.app .app-pic {
+  grid-column: 1/-1;
+}
+
+.app .app-pic .card {
+  text-align: center;
+  width: 300px;
+  margin: 10px 20px;
+}
+
+.app .app-pic .flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 /*# sourceMappingURL=main.css.map */

@@ -244,3 +244,25 @@ hr {
     }
   }
 }
+
+/* App Section */
+
+.app {
+  .app-text {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+  .app-pic {
+    grid-column: 1/-1;
+  }
+  .app-pic {
+    .card {
+      text-align: center;
+      width: 300px;
+      margin: 10px 20px;
+    }
+    .flex {
+      flex-wrap: wrap;
+    }
+  }
+}
