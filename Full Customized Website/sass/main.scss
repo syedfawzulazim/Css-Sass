@@ -51,7 +51,8 @@ hr {
     }
     li {
       .nav_links {
-        margin: 0 20px;
+        display: inline-block;
+        margin: 10px 20px;
         font-size: 1.2rem;
         &:hover {
           border-bottom: 2px solid black;
@@ -292,11 +293,57 @@ hr {
       img {
         padding: 10px;
       }
+      .btn {
+        font-size: 12px;
+        margin: 30px;
+        padding: 10px 60px;
+      }
     }
   }
   .right {
     img {
       width: 100%;
+    }
+  }
+}
+
+/* Pricing Section */
+
+.price {
+  .top {
+    grid-column: 1/-1;
+    text-align: center;
+    a {
+      padding: 10px 30px;
+    }
+  }
+  .bot {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+  .card {
+    margin: 20px;
+    height: 90%;
+    padding: 0;
+    .one {
+      background-color: #ebebeb;
+      padding: 30px;
+      text-align: center;
+    }
+    .two {
+      padding: 30px;
+
+      h5 {
+        margin: 10px 0;
+        transition: 0.5s;
+        &:hover {
+          color: blue;
+          font-size: 10px;
+        }
+      }
+      .btn {
+        margin-top: 10px;
+      }
     }
   }
 }

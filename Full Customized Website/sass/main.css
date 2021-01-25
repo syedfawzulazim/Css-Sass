@@ -155,6 +155,7 @@
 }
 
 .btn {
+  display: inline-block;
   background-color: #7260d6;
   color: white;
   border: 2px solid #7260d6;
@@ -243,7 +244,8 @@ hr {
 }
 
 .header .nav__bar li .nav_links {
-  margin: 0 20px;
+  display: inline-block;
+  margin: 10px 20px;
   font-size: 1.2rem;
 }
 
@@ -516,7 +518,59 @@ hr {
   padding: 10px;
 }
 
+.ultimate .left .bot .btn {
+  font-size: 12px;
+  margin: 30px;
+  padding: 10px 60px;
+}
+
 .ultimate .right img {
   width: 100%;
+}
+
+/* Pricing Section */
+.price .top {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.price .top a {
+  padding: 10px 30px;
+}
+
+.price .bot {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.price .card {
+  margin: 20px;
+  height: 90%;
+  padding: 0;
+}
+
+.price .card .one {
+  background-color: #ebebeb;
+  padding: 30px;
+  text-align: center;
+}
+
+.price .card .two {
+  padding: 30px;
+}
+
+.price .card .two h5 {
+  margin: 10px 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.price .card .two h5:hover {
+  color: blue;
+  font-size: 10px;
+}
+
+.price .card .two .btn {
+  margin-top: 10px;
 }
 /*# sourceMappingURL=main.css.map */
