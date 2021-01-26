@@ -1,0 +1,77 @@
+/* Table and Under */
+@media (max-width: 768px) {
+  .header {
+    .flex {
+      flex-direction: column;
+    }
+  }
+  .hero {
+    .container {
+      height: 100vh;
+      margin: 20px;
+    }
+    .flex {
+      flex-direction: column;
+    }
+    .hero__text {
+      margin-bottom: 20px;
+    }
+  }
+
+  .company {
+    .container {
+      margin-top: 100px;
+    }
+  }
+
+  .jackport {
+    .container {
+      margin: 10px auto;
+    }
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .flex {
+      flex-wrap: wrap;
+
+      .card {
+        width: 300px;
+      }
+    }
+  }
+
+  .design {
+    .grid {
+      grid-template-columns: 1fr;
+      .image {
+        img {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .price {
+    .container {
+      padding: 5px;
+    }
+
+    .one {
+      padding: 5px;
+    }
+  }
+  .download {
+    .flex {
+      flex-direction: column;
+    }
+
+    img {
+      padding: 30px;
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+}
