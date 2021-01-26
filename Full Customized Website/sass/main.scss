@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 @import "utilities";
 @import "variables";
-@import "mediaQ";
+
 *,
 *::before,
 *::after {
@@ -299,8 +299,7 @@ hr {
     }
     .card {
       width: 220px;
-      margin-left: 25px;
-      //align-items: start;
+      margin-left: 10px;
     }
     .bot {
       flex-wrap: wrap;
@@ -324,7 +323,6 @@ hr {
 /* Pricing Section */
 
 .price {
-  margin: 50px;
   .top {
     grid-column: 1/-1;
     text-align: center;
@@ -333,12 +331,13 @@ hr {
     }
   }
   .bot {
+    padding-bottom: 10px;
     grid-column: 1/-1;
     text-align: center;
   }
   .card {
-    margin: 20px;
-    height: 90%;
+    margin: 10px;
+    height: 100%;
 
     padding: 0;
     .one {
@@ -406,3 +405,5 @@ hr {
     color: salmon;
   }
 }
+
+@import "mediaQ";
