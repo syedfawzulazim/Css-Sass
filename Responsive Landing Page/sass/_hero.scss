@@ -37,7 +37,7 @@
         background-image: url("/img/bg-intro-desktop.svg");
         background-size: cover;
         background-repeat: no-repeat;
-        width: 100%;
+        width: 55.3vw;
         height: 132%;
         top: -141px;
       }
@@ -72,23 +72,6 @@
       flex: 2;
       order: 1;
       text-align: left;
-    }
-
-    h1 {
-      font-weight: 300;
-      font-size: 2.3125rem;
-      line-height: 1.15;
-      color: $clr-DarkBlue;
-      margin-bottom: 1.5rem;
-
-      @include breakpoint-up(large) {
-        font-size: $font-xlg;
-      }
-    }
-
-    p {
-      line-height: 1.5;
-      margin-bottom: 2.25rem;
     }
   }
 }
