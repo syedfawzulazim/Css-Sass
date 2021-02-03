@@ -16,23 +16,41 @@
 
     <header class="header flex flex-jc-sb flex-ai-c">
 
-        <a href="#" class="logo">
+        <a href="#" class="header__logo">
             <h1>DesignX</h1>
         </a>
 
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About us</a></li>
+        <nav class="header__navbar hide-for-mobile-table">
+            <ul class="header__navbar__links">
+                <li class="nav-item"><a href="#" class="active">Home</a></li>
+                <li class="nav-item"><a href="#">Services</a></li>
+                <li class="nav-item"><a href="#">Pricing</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+                <li class="nav-item"><a href="#">About us</a></li>
             </ul>
         </nav>
 
 
+        <div class="header__toggle hide-for-desktop">
+            <a href="#" onclick="openMenu()"> <i class="fa fa-2x fa-bars" aria-hidden="true"></i></i> </a>
+        </div>
+
+        <div class="header__menu hide-for-desktop ">
+            <ul class="menu__items">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Pricing</a>
+                <a href="#">Contact</a>
+                <a href="#">About Us</a>
+            </ul>
+        </div>
+
     </header>
 
+    <section class="headline flex flex-col flex-jc-c flex-ai-c">
+        <h1>Responsive Navigation</h1>
+        <p>Using CSS grid and flexbox to easily build navbars!</p>
+    </section>
 
 
 
