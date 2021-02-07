@@ -1,0 +1,16 @@
+/*  1024px++ */
+@include breakpoint-up(large) {
+  .header {
+    &__toggle {
+      display: none;
+    }
+  }
+}
+/*  1023px-- */
+@include breakpoint-down(medium) {
+  .header {
+    nav {
+      display: none;
+    }
+  }
+}
