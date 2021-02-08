@@ -1,5 +1,10 @@
 .header {
-  background-color: $clr--dark-700;
+  background-color: $clr--dark-800;
+  border-bottom: 1px solid $clr--dark-700;
+  position: sticky;
+  top: 0;
+  width: 100;
+  z-index: 101;
 
   .container {
     padding: 8px;
@@ -26,7 +31,6 @@
   }
 
   &__toggle {
-    position: relative;
     width: 44px;
     height: 34px;
 
