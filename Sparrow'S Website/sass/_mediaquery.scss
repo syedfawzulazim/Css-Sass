@@ -1,16 +1,15 @@
-/*  1024px++ */
-@include breakpoint-up(large) {
-  .header {
-    &__toggle {
-      display: none;
-    }
-  }
-}
-/*  1023px-- */
-@include breakpoint-down(medium) {
+/* Mobile & Tablets: 1023--*/
+@include breakpoint-down(large) {
   .header {
     nav {
       display: none;
     }
+  }
+}
+
+/* Desktop: 1024++*/
+@include breakpoint-up(large) {
+  #toggle__btn {
+    display: none;
   }
 }

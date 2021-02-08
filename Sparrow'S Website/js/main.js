@@ -1,8 +1,9 @@
-const toggleBtn = document.querySelector('.toggle__btn');
+const headerToggle = document.querySelector('.header__toggle');
 
-
-
-
-toggleBtn.addEventListener('click', () =>{
-   toggleBtn.classList.add('toggler');
+headerToggle.addEventListener('click', () =>{
+   headerToggle.classList.toggle("active");
 })
+
+
+
+
