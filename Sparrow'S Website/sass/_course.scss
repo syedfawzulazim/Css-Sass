@@ -36,6 +36,18 @@
       border-radius: 5px;
       background-color: $clr--dark-700;
       box-shadow: 0 0 5px $clr--main;
+      transition: all 400ms ease;
+
+      &:hover {
+        &:nth-child(odd) {
+          transform: rotate(10deg);
+          box-shadow: 0 0 10px $clr--2;
+        }
+        &:nth-child(even) {
+          transform: rotate(-10deg);
+          box-shadow: 0 0 10px $clr--2;
+        }
+      }
 
       .info {
         padding: 5px;
@@ -62,7 +74,7 @@
           transition: transform 300ms ease;
 
           &:hover {
-            transform: scale(0.9);
+            transform: scale(1.05);
           }
         }
         .course__price {
