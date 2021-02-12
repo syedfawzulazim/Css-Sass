@@ -2,7 +2,112 @@
 @include breakpoint-down(large) {
   .header {
     nav {
-      display: none;
+      // width: 40%;
+      height: 100vh;
+      position: absolute;
+      background-color: $clr--dark-700;
+      top: 100%;
+      left: -60%;
+      padding: 20px;
+      transition: left 500ms ease-in-out;
+
+      ul {
+        li {
+          display: block;
+          margin: 10px 20px;
+          padding: 20px;
+        }
+      }
+    }
+  }
+
+  .home {
+    min-height: 50vh;
+  }
+  .why-us__items .flex {
+    flex-direction: column;
+  }
+}
+
+@include breakpoint-down(medium) {
+  .home {
+    .flex {
+      flex-direction: column;
+    }
+    .home__text {
+      width: 100%;
+      margin: 0 0 60px 0;
+    }
+    .home__img {
+      width: 100%;
+    }
+  }
+
+  .why-us {
+    .flex {
+      flex-direction: column;
+    }
+    .why-us__items .why-us__card {
+      width: 100%;
+      margin: 30px auto;
+    }
+  }
+
+  .course {
+    .flex {
+      //flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .course__items {
+      .course__card {
+        min-width: 340px;
+        margin: 30px auto;
+      }
+    }
+  }
+
+  .funfact {
+    .funfact__items.flex {
+      flex-direction: column;
+    }
+    .funfact__img {
+      margin: 40px;
+    }
+    .funfact__card.flex {
+      //flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .funfact__card {
+      width: 100%;
+    }
+    .funfact__items .funfact__card .box {
+      width: fit-content;
+    }
+  }
+  .review {
+    .review__item {
+      .review__card {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .review__text {
+    }
+  }
+
+  .contact {
+    .contact__item {
+      flex-direction: column;
+      padding: 10px;
+      .contact__img {
+        width: 100%;
+      }
+      .contact__form {
+        width: 100%;
+        form {
+          width: 300px;
+        }
+      }
     }
   }
 }
