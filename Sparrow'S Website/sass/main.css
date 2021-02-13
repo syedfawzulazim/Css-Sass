@@ -674,7 +674,6 @@ img {
 }
 
 .funfact__items .funfact__img {
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -684,7 +683,8 @@ img {
 }
 
 .funfact__items .funfact__img img {
-  min-width: 420px;
+  max-width: 420px;
+  width: 100%;
   -webkit-animation: zoomInOut01 7s linear infinite;
           animation: zoomInOut01 7s linear infinite;
 }
@@ -919,6 +919,7 @@ img {
   border: 0;
   padding: 10px;
   height: 100px;
+  color: #fff;
 }
 
 .contact__item .contact__form form textarea:focus {
@@ -1004,6 +1005,7 @@ img {
   border-radius: 10px;
   border: 1px solid transparent;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .footer .new form input:focus {
@@ -1031,7 +1033,7 @@ img {
     position: absolute;
     background-color: #2f363e;
     top: 100%;
-    left: -60%;
+    left: -80%;
     padding: 20px;
     -webkit-transition: left 500ms ease-in-out;
     transition: left 500ms ease-in-out;
@@ -1081,7 +1083,8 @@ img {
         flex-wrap: wrap;
   }
   .course .course__items .course__card {
-    min-width: 340px;
+    max-width: 420px;
+    width: 100%;
     margin: 30px auto;
   }
   .funfact .funfact__items.flex {
@@ -1089,9 +1092,6 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .funfact .funfact__img {
-    margin: 40px;
   }
   .funfact .funfact__card.flex {
     -ms-flex-wrap: wrap;
@@ -1123,7 +1123,19 @@ img {
     width: 100%;
   }
   .contact .contact__item .contact__form form {
-    width: 300px;
+    max-width: 420px;
+    width: 100%;
+  }
+  .footer .container.flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
   }
 }
 

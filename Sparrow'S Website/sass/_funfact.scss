@@ -27,12 +27,13 @@
 
   &__items {
     .funfact__img {
-      width: 50%;
+      //  width: 50%;
 
       display: flex;
       justify-content: center;
       img {
-        min-width: 420px;
+        max-width: 420px;
+        width: 100%;
         animation: zoomInOut01 7s linear infinite;
       }
     }

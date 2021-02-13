@@ -7,7 +7,7 @@ headerToggle.addEventListener('click', () =>{
    headerNav.style.left = "0%";
   }
   else{
-   headerNav.style.left = "-60%";
+   headerNav.style.left = "-80%";
   }
 })
 
