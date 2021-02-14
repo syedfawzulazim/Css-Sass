@@ -1,4 +1,4 @@
-# Front-End HTML CSS Sass JavaScript
+# Front-End HTML CSS Sass
 
 Live Projects Links:- 
 
