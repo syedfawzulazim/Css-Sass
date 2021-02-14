@@ -1,0 +1,226 @@
+/* Table and Under */
+@media screen and (max-width: 768px) {
+  .header {
+    .flex {
+      flex-direction: column;
+    }
+  }
+  .hero {
+    .container {
+      height: 100vh;
+      margin: 20px;
+    }
+    .flex {
+      flex-direction: column;
+    }
+    .hero__text {
+      margin-bottom: 20px;
+    }
+  }
+
+  .company {
+    .container {
+      margin-top: 100px;
+    }
+  }
+
+  .jackport {
+    .container {
+      margin: 10px auto;
+    }
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .flex {
+      flex-wrap: wrap;
+
+      .card {
+        width: 300px;
+      }
+    }
+  }
+  .ultimate {
+    .container {
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+    .grid {
+      grid-template-columns: 1fr;
+    }
+    .left {
+      .top {
+        text-align: center;
+      }
+      .card {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .design {
+    .grid {
+      grid-template-columns: 1fr;
+      .image {
+        img {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .price {
+    .container {
+      padding: 5px;
+    }
+    .one {
+      padding: 5px;
+    }
+  }
+  .download {
+    .flex {
+      flex-direction: column;
+    }
+
+    img {
+      padding: 30px;
+    }
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 5px;
+  }
+  .hero {
+    .hero__text {
+      text-align: center;
+      .mx-3 {
+        margin: 0;
+      }
+    }
+    .hero__pic {
+      text-align: center;
+      img {
+        height: 250px;
+        width: 450px;
+      }
+      .pic {
+        // animation: slideInFromRight 1s ease-in;
+      }
+    }
+  }
+  .app-features {
+    .container {
+      padding: 40px;
+    }
+    .app-features__left {
+      text-align: center;
+      margin: 0;
+    }
+    .app-features__right {
+      img {
+        margin-left: 10px;
+        padding: 10px;
+        width: 20%;
+      }
+      h1,
+      p,
+      div {
+        align-self: center;
+      }
+      margin: 0 auto;
+      padding: 10px;
+      .card {
+        width: 250px;
+        padding: 10px 5px;
+      }
+    }
+    .grid {
+      grid-template-columns: 1fr;
+    }
+    img {
+      width: 80%;
+    }
+  }
+  .jackport {
+    .container {
+      margin: 5px auto;
+      padding: 10px;
+    }
+    .bot {
+      .card {
+        width: 250px;
+        margin: 5px;
+      }
+    }
+  }
+  .price {
+    .card {
+      margin: 5px;
+      .one {
+        padding: 5px;
+      }
+      .two {
+        padding: 5px;
+      }
+    }
+    .bot {
+      .flex {
+        flex-direction: column;
+      }
+    }
+  }
+  .ultimate .left .bot .btn {
+    font-size: 12px;
+    margin: 0px;
+    padding: 7px 60px;
+  }
+  .download {
+    img {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .hero {
+    .container {
+      height: 100vh;
+      margin: 20px;
+    }
+    .flex {
+      flex-direction: column;
+    }
+    .hero__text {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+  .header {
+    .flex {
+      flex-direction: row;
+    }
+  }
+  .nav__bar {
+    li {
+      display: none;
+    }
+  }
+  .nav__bar .icon {
+    display: inline-block;
+
+    padding: 20px;
+    font-size: 20px;
+  }
+  .company {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 881px) {
+  .sidenav {
+    display: none;
+  }
+}
