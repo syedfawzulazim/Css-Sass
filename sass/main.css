@@ -269,6 +269,7 @@ h2 {
 
 p {
   margin: 10px, 0;
+  font-size: 16px;
 }
 
 img {
@@ -440,6 +441,10 @@ img {
 
 .footer .social a {
   margin: 0 10px;
+}
+
+.footer a {
+  font-size: 14px;
 }
 
 .features-head img,

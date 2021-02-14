@@ -32,6 +32,7 @@ h2 {
 }
 p {
   margin: 10px, 0;
+  font-size: 16px;
 }
 img {
   width: 100%;
@@ -175,6 +176,10 @@ img {
   margin: 0 10px;
 }
 
+.footer a {
+  font-size: 14px;
+}
+
 //features
 .features-head,
 .docs-head {
@@ -312,6 +317,7 @@ pre {
   .features-sub-head,
   .docs-head {
     text-align: center;
+
     img {
       justify-self: center;
     }
