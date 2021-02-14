@@ -2,375 +2,178 @@
 <html lang="en">
 
 <head>
-    <title>Sparrow'S</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.ico">
+    <title>Sparrow | Cloud Hosting For Everyone</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--  CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="/sass/main.css">
 </head>
 
 <body>
 
-    <!-- Header Section Start -->
-    <header class="header">
-        <div class="container flex flex--jc-sb flex--ai-c">
-
-            <div class="header__logo">
-                <a href="#">The Sparrow'S</a>
-            </div>
-
-            <a id="toggle__btn" class="header__toggle">
-                <span></span>
-            </a>
-
-            <nav class="header__nav">
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Sparrow<span>'S</span></h1>
+            <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#why-us">Why Us</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#reviews">Reviews</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="documentation.html">Docs</a></li>
                 </ul>
             </nav>
-
         </div>
-    </header>
-    <!-- Header Section End -->
+    </div>
 
-    <!-- Home Section Start -->
-    <section class="home" id="home">
-        <div class="container flex flex--ai-c">
-            <div class="home__text">
-                <h1>Fall in love with <span>coding</span></h1>
-                <h2>Explore the world of Competitive Porgramming.</h2>
-                <a href="#courrses" class="btn btn-1">get started</a>
+    <!-- Showcase -->
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>Easier Deployment</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia facilis ipsam tempora ad pariatur
+                    minus repudiandae, libero hic aliquam deserunt quasi ullam fuga dolores sapiente cupiditate
+                    laudantium. Mollitia, natus aliquam? </p>
+                <a href="features.html" class="btn btn-outline">Read More</a>
             </div>
-            <div class="home__img">
-                <div class="home__img__inner">
-                    <div class="home__course">
-                        <div class="home__course__item">Html</div>
-                        <div class="home__course__item">Css</div>
-                        <div class="home__course__item">JS</div>
-                        <div class="home__course__item">React</div>
+            <div class="showcase-form card">
+                <h2>Requset a Demo</h2>
+
+                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden">
+                        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                    </p>
+                    <div class="form-control">
+                        <input type="text" name="Name" placeholder="Name" required>
                     </div>
-                    <img src="img/home-img.png" alt="">
-                </div>
+                    <div class="form-control">
+                        <input type="text" name="company" placeholder="Company Name" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" placeholder="E-mail" required>
+                    </div>
+                    <input type="submit" value="Send" class="btn btn-primary">
+                </form>
             </div>
         </div>
     </section>
-    <!-- Home Section End -->
 
-    <!-- Why-Us Section Start -->
-    <section class="why-us sec-padding" id="why-us">
+    <!-- Stats -->
+    <section class="stats">
         <div class="container">
-            <div class="why-us__text">
-                <h2>Why <span>Us</span> </h2>
-            </div>
-            <div class="why-us__items flex">
-
-                <div class="why-us__card ">
-                    <div class="icon">
-                        <i class="fa fa-dashboard " aria-hidden="true"></i>
-                    </div>
-                    <h3>Experience Trainer</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, atque. Dicta enim maiores vitae
-                        dolorum cumque autem doloremque aperiam earum!</p>
+            <h3 class="stats-heading text-center my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                quibusdam expedita vel, quaerat tenetur ipsam a suscipit quod consectetur doloremque, corporis, natus
+                sint eos possimus?
+            </h3>
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <i class="fas fa-server fa-3x"></i>
+                    <h3>10,340,221</h3>
+                    <p class="text-secondary">Deploymnets</p>
                 </div>
-
-                <div class="why-us__card ">
-                    <div class="icon">
-                        <i class="fa fa-binoculars" aria-hidden="true"></i>
-                    </div>
-                    <h3>Live Projects</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, atque. Dicta enim maiores vitae
-                        dolorum cumque autem doloremque aperiam earum!</p>
+                <div>
+                    <i class="fas fa-upload fa-3x"></i>
+                    <h3>954 TB</h3>
+                    <p class="text-secondary">Published</p>
                 </div>
-
-                <div class="why-us__card ">
-                    <div class="icon">
-                        <i class="fa fa-balance-scale" aria-hidden="true"></i>
-                    </div>
-                    <h3>Certification</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, atque. Dicta enim maiores vitae
-                        dolorum cumque autem doloremque aperiam earum!</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Why-Us Section End -->
-
-    <!-- Course Section Start -->
-    <section class="course sec-padding" id="courses">
-        <div class="container">
-            <div class="course__text">
-                <h2>Popular <span>Courses</span> </h2>
-            </div>
-            <div class="course__items flex">
-                <div class="course__card">
-                    <a href="#">
-                        <div class="course__img">
-                            <img src="img/courses/1.jpg" alt="">
-                            <div class="course__price">
-                                99$
-                            </div>
-                        </div>
-                        <div class="info flex flex--jc-sb">
-                            <h5>26 Lectures </h5>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                        </div>
-                        <h3>HTML</h3>
-                    </a>
-                </div>
-                <div class="course__card">
-                    <a href="#">
-                        <div class="course__img">
-                            <img src="img/courses/2.jpg" alt="">
-                            <div class="course__price">
-                                125$
-                            </div>
-                        </div>
-                        <div class="info flex flex--jc-sb">
-                            <h5>26 Lectures </h5>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                        </div>
-                        <h3>CSS</h3>
-                    </a>
-                </div>
-                <div class="course__card">
-                    <a href="#">
-                        <div class="course__img">
-                            <img src="img/courses/3.jpg" alt="">
-                            <div class="course__price">
-                                105$
-                            </div>
-                        </div>
-                        <div class="info flex flex--jc-sb">
-                            <h5>26 Lectures </h5>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                        </div>
-                        <h3>JavaScript</h3>
-                    </a>
-                </div>
-                <div class="course__card">
-                    <a href="#">
-                        <div class="course__img">
-                            <img src="img/courses/4.jpg" alt="">
-                            <div class="course__price">
-                                145$
-                            </div>
-                        </div>
-                        <div class="info flex flex--jc-sb">
-                            <h5>26 Lectures </h5>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                        </div>
-                        <h3>React</h3>
-                    </a>
+                <div>
+                    <i class="fas fa-project-diagram fa-3x"></i>
+                    <h3>2,323,121</h3>
+                    <p class="text-secondary">Projects</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Course Section End -->
 
-    <!-- Fun Facts Section Start -->
-    <section class="funfact sec-padding">
-        <div class="container">
-            <div class="funfact__text">
-                <h2> Our <Span>Achievement</Span></h2>
+    <!-- CLI -->
+    <section class="cli">
+        <div class="container grid">
+            <img src="img/cli.png" alt="">
+            <div class="card">
+                <h3>Easy to use, Cross platform CLI</h3>
             </div>
-            <div class="funfact__items flex flex--jc-c flex--ai-c">
-                <div class="funfact__img">
-                    <img src="img/fun-facts-img.png" alt="">
-                </div>
-                <div class="funfact__card  flex">
-                    <div class="box">
-                        <h3>5K</h3>
-                        <p>Finished Session</p>
-                    </div>
-                    <div class="box">
-                        <h3>50K</h3>
-                        <p>Enrolled Student</p>
-                    </div>
-                    <div class="box">
-                        <h3>20+</h3>
-                        <p>Total Courses</p>
-                    </div>
-                    <div class="box">
-                        <h3>95%</h3>
-                        <p>Satisfaction Rate</p>
-                    </div>
-
-                </div>
+            <div class="card">
+                <h3>Deploy is Seconds</h3>
             </div>
         </div>
     </section>
-    <!-- Fun Facts Section End -->
 
-    <!-- Review Section Start -->
-    <section class="review sec-padding" id="reviews">
-        <div class="container">
-            <div class="review__text">
-                <h2> what our <span>student</span> saying</h2>
+    <!-- Cloud -->
+    <section class="cloud bg-primary my-2 py-2">
+        <div class="container grid">
+            <div class="text-center">
+                <h2 class="lg">Extreme Cloud Hosting</h2>
+                <p class="lead my-1">Cloud hosting like you've never seen. Fast, efficient and scalable</p>
+                <a href="features.html" class="btn btn-dark">Read More</a>
             </div>
-            <div class="review__item ">
-                <div class="review__card">
-                    <img src="img/reviews/1.jpg" alt="">
-                    <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nesciunt asperiores minus tenetur nihil
-                        ex provident, similique sit dolorem fugiat error?<i class="fa fa-quote-right"></i> </p>
-                    <h3>Raj Himachal</h3>
-                    <span>Student</span>
-                </div>
-                <div class="review__card">
-                    <img src="img/reviews/2.jpg" alt="">
-                    <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nesciunt asperiores minus tenetur nihil
-                        ex provident, similique sit dolorem fugiat error?<i class="fa fa-quote-right"></i> </p>
-                    <h3>Raj Himachal</h3>
-                    <span>Student</span>
-                </div>
-                <div class="review__card">
-                    <img src="img/reviews/3.jpg" alt="">
-                    <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nesciunt asperiores minus tenetur nihil
-                        ex provident, similique sit dolorem fugiat error?<i class="fa fa-quote-right"></i> </p>
-                    <h3>Raj Himachal</h3>
-                    <span>Student</span>
-                </div>
-                <div class="review__card">
-                    <img src="img/reviews/4.jpg" alt="">
-                    <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nesciunt asperiores minus tenetur nihil
-                        ex provident, similique sit dolorem fugiat error?<i class="fa fa-quote-right"></i> </p>
-                    <h3>Raj Himachal</h3>
-                    <span>Student</span>
-                </div>
-            </div>
+            <img src="img/cloud.png" alt="">
         </div>
     </section>
-    <!-- Review Section End -->
 
-
-    <!-- Contact Us Start -->
-    <section class="contact sec-padding" id="contact">
-        <div class="comtainer">
-            <div class="contact__text">
-                <h2>Contact <span>Us</span></h2>
+    <!-- Languages -->
+    <section class="language">
+        <h2 class="lead text-center my-2">Supported Languages</h2>
+        <div class="container flex">
+            <div class="card">
+                <h4>Node.js</h4>
+                <img src="/img/logos/node.png" alt="">
             </div>
-            <div class="contact__item flex">
-                <div class="contact__img">
-                    <img src="img/contact-img.png" alt="">
-                </div>
-                <div class="contact__form ">
-                    <form action="#">
-                        <input type="text" name="name" placeholder="Name" id="">
-                        <input type="text" name="email" placeholder="E-mail" id="">
-                        <input type="text" name="phone" placeholder="Phone" id="">
-                        <textarea name="msg" placeholder="Message" id="" cols="30" rows="10"></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
-
-                </div>
+            <div class="card">
+                <h4>C#</h4>
+                <img src="/img/logos/csharp.png" alt="">
             </div>
-        </div>
-    </section>
-    <!-- Contact Us End -->
-
-    <!-- Footer Start -->
-    <section class="footer sec-padding">
-        <div class="container flex ">
-            <div class="item about">
-
-                <div class="title">
-                    <h2>About Us</h2>
-                </div>
-
-                <div class="text">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus qui tenetur aliquid
-                        distinctio mollitia omnis sint!</p>
-                    <div class="social__links">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitch"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-github"></i></a>
-                    </div>
-                </div>
+            <div class="card">
+                <h4>Coljure</h4>
+                <img src="/img/logos/clojure.png" alt="">
             </div>
-            <div class="item quick">
-                <div class="title">
-                    <h2>Quick Links</h2>
-                </div>
-                <div class="text">
-                    <ul>
-                        <li><a href="#">courses</a></li>
-                        <li><a href="#">stories</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">sign uo</a></li>
-                        <li><a href="#">log in</a></li>
-                    </ul>
-                </div>
-
+            <div class="card">
+                <h4>GO</h4>
+                <img src="/img/logos/go.png" alt="">
             </div>
-            <div class="item contacts">
-                <div class="title">
-                    <h2>Contact Us</h2>
-                </div>
-                <div class="text">
-                    <p><i class="fa fa-map-marker"></i> Xyz floor, 12 Sector, New York, USA</p>
-                    <p><i class="fa fa-phone"></i>901 020 3123</p>
-                    <p><i class="fa fa-envelope"></i> example@gmail.com</p>
-                </div>
-
+            <div class="card">
+                <h4>Python</h4>
+                <img src="/img/logos/python.png" alt="">
             </div>
-            <div class="item new">
-                <div class="title">
-                    <h2>NewsLetter</h2>
-                </div>
-                <div class="btn">
-                    <form action="#">
-                        <input type="text" placeholder="Your Email" name="" id="">
-                        <button type="submit">Subscriibe</button>
-                    </form>
-                </div>
-
+            <div class="card">
+                <h4>Ruby</h4>
+                <img src="/img/logos/ruby.png" alt="">
+            </div>
+            <div class="card">
+                <h4>Scala</h4>
+                <img src="/img/logos/scala.png" alt="">
             </div>
         </div>
+
     </section>
-    <!-- Footer End -->
 
+    <!-- Footer -->
 
-
-
-
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Sparrow <span>'S</span></h1>
+                <p>Copyright &copy; 2021</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Documentation</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href=""> <i class="fab fa-github fa-2x"></i> </a>
+                <a href=""> <i class="fab fa-facebook fa-2x"></i> </a>
+                <a href=""> <i class="fab fa-twitter fa-2x"></i> </a>
+                <a href=""> <i class="fab fa-instagram fa-2x"></i> </a>
+            </div>
+        </div>
+    </footer>
 
 
 
